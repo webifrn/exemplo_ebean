@@ -1,0 +1,9 @@
+@(cursos: List[Curso])
+
+@main("Cursos") {
+  <h1>Cursos</h1>
+  @for(curso <- cursos){
+    <p>@curso.codigo - @curso.nome - @curso.nivel</p>
+  }
+
+}

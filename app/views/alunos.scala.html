@@ -1,0 +1,10 @@
+@(cursos: List[Curso])
+
+@main("Alunos") {
+  <h1>Cursos</h1>
+  @for(curso <- cursos){
+    <p>@curso.codigo - @curso.nome - @curso.nivel:
+       @{curso.alunos.map(_.nome).mkString(", ")}
+    </p>
+  }
+}

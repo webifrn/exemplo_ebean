@@ -1,0 +1,9 @@
+@(aluno: Aluno)
+
+@main("Aluno: " + aluno.nome) {
+  <h1>Aluno: @aluno.nome</h1>
+  Matrícula: @aluno.matricula <br>
+  Nome: @aluno.nome <br>
+  Sexo: @aluno.sexo <br>
+  Curso: @aluno.curso.nome
+}
